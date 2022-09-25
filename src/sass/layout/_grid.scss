@@ -1,0 +1,21 @@
+@use '../abstracts/mixins' as mxn;
+
+.features-grid {
+	display: grid;
+	justify-content: center;
+	gap: 8rem;
+
+	@include mxn.mq(small) {
+		grid-template-columns: repeat(2, 1fr);
+
+		/* elements on the right aligned to the right side */
+		& > *:nth-child(2n) {
+			justify-self: end;
+		}
+
+		/* elements on the left aligned to the left side */
+		& > *:nth-child(2n + 1) {
+			justify-self: start;
+		}
+	}
+}

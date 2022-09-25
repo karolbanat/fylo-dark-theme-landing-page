@@ -1,0 +1,29 @@
+@use '../abstracts/mixins' as mxn;
+
+.feature-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 36rem;
+	text-align: center;
+	font-size: var(--fz-400);
+
+	&__heading {
+		margin-top: 2.4rem;
+		margin-bottom: 0.4rem;
+		font-size: var(--fz-card-heading);
+		@include mxn.mq(small) {
+			margin-top: 1.6rem;
+		}
+	}
+
+	&__icon {
+		--width: 8rem;
+		width: var(--width);
+		aspect-ratio: 1;
+		object-fit: contain;
+		@include mxn.mq(small) {
+			--width: 10.4rem;
+		}
+	}
+}
