@@ -1,7 +1,16 @@
 @use '../abstracts/mixins' as mxn;
 
 .primary-header {
-	margin-bottom: clamp(12rem, 20vw, 15.8rem);
+	padding-bottom: clamp(12rem, 20vw, 15.8rem);
+	background-color: var(--clr-primary-500);
+	/* background image */
+	background-image: url('../images/backgrounds/bg-curvy-mobile.svg');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: contain;
+	@include mxn.mq(medium) {
+		background-image: url('../images/backgrounds/bg-curvy-desktop.svg');
+	}
 
 	&__heading {
 		font-size: var(--fz-700);
