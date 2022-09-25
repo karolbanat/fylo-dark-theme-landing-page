@@ -4,8 +4,8 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ## Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-ulGETXxGy4)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/fylo-dark-theme-landing-page/)
 
 ## Author
 
