@@ -1,0 +1,26 @@
+.container {
+	--padding-inline: 2.8rem;
+
+	margin-inline: auto;
+	width: min(var(--max-width, 111rem), 100% - 2 * var(--padding-inline));
+
+	&--xsmall {
+		--max-width: 72rem;
+	}
+
+	&--small {
+		--max-width: 88rem;
+	}
+
+	&--medium {
+		--max-width: 116rem;
+	}
+
+	&--large {
+		--max-width: 124rem;
+	}
+
+	&--xlarge {
+		--max-width: 128rem;
+	}
+}

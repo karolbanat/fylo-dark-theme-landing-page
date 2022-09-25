@@ -1,0 +1,23 @@
+.button {
+	display: inline-block;
+	padding: var(--button-padding-block, 1.225em) var(--button-padding-inline, 6em);
+	font-size: var(--fz-450);
+	font-weight: var(--fw-700);
+	text-decoration: none;
+	line-height: 1;
+	color: var(--clr-neutral-100);
+	background: linear-gradient(135deg, var(--clr-accent-400), var(--clr-accent-700));
+	border: none;
+	border-radius: var(--borr-900);
+	cursor: pointer;
+
+	&:hover,
+	&:focus-visible {
+		background: var(--clr-accent-300);
+	}
+
+	&--small {
+		--button-padding-block: 1em;
+		--button-padding-inline: 1.85em;
+	}
+}

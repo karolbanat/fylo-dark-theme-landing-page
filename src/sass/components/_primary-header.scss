@@ -1,0 +1,16 @@
+@use '../abstracts/mixins' as mxn;
+
+.primary-header {
+	margin-bottom: clamp(12rem, 20vw, 15.8rem);
+
+	&__heading {
+		font-size: var(--fz-700);
+	}
+
+	&__button {
+		margin-top: 1.8rem;
+		@include mxn.mq(medium) {
+			margin-top: 3.2rem;
+		}
+	}
+}
