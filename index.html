@@ -175,13 +175,18 @@
             questions, our support team would be happy to help you.</p>
         </header>
         <form class="sign-up-form">
-          <input aria-label="Email"
-                 name="email"
-                 placeholder="email@example.com"
-                 type="email"
-                 class="sign-up-form__input"
-                 required>
-          <button type="submit" class="button button--primary button--small">Get Started For Free</button>
+          <div class="sign-up-form__input-box">
+            <input aria-label="Email"
+                   name="email"
+                   placeholder="email@example.com"
+                   type="email"
+                   id="sign-up-input"
+                   class="sign-up-form__input"
+                   required>
+            <p id="email-error" class="sign-up-form__error">Please enter a valid email address</p>
+          </div>
+          <button type="submit" id="sign-up-submit" class="button button--primary button--small">Get Started For
+            Free</button>
         </form>
       </section>
     </div>
@@ -233,6 +238,7 @@
     </div>
   </footer>
 
+  <script src="./dist/js/main.min.js"></script>
 </body>
 
 </html>

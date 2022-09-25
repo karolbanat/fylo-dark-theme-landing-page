@@ -8,13 +8,31 @@
 		flex-direction: row;
 		gap: 2.8rem;
 	}
+	&__input-box {
+		position: relative;
+		flex: 1;
+	}
 
 	&__input {
-		flex: 1;
+		width: 100%;
 		padding: 1.25em 3em;
 		font-size: var(--fz-225);
 		color: var(--clr-primary-700);
 		border: none;
 		border-radius: var(--borr-900);
+	}
+
+	&__error {
+		display: none;
+		position: absolute;
+		margin-top: 0.5rem;
+		margin-left: 3em;
+		font-size: var(--fz-225);
+		font-weight: var(--fw-700);
+		color: var(--clr-accent-200);
+
+		&.visible {
+			display: block;
+		}
 	}
 }
