@@ -4,16 +4,62 @@ $breakpoints: (
 	large: 62em,
 );
 
-$colors: ();
-
-$font-sizes: (
-	small: (),
-	medium: (),
+$colors: (
+	primary: (
+		400: hsl(219 30% 18%),
+		500: hsl(217 28% 15%),
+		600: hsl(218 28% 13%),
+		700: hsl(216 53% 9%),
+	),
+	accent: (
+		200: hsl(0 100% 63%),
+		300: hsl(186 61% 72%),
+		400: hsl(176 68% 64%),
+		700: hsl(198 60% 50%),
+	),
+	neutral: (
+		100: hsl(0 0% 100%),
+	),
 );
 
-$font-weights: ();
+$font-sizes: (
+	small: (
+		100: 0.8rem,
+		200: 1rem,
+		225: 1rem,
+		250: 1rem,
+		300: 1.2rem,
+		400: 1.4rem,
+		450: 1.4rem,
+		475: 1.4rem,
+		700: 2.4rem,
+		card-heading: 1.8rem,
+		sign-up-heading: 1.8rem,
+		productive-heading: 1.8rem,
+	),
+	medium: (
+		225: 1.2rem,
+		250: 1.4rem,
+		300: 1.6rem,
+		450: 1.6rem,
+		475: 2rem,
+		700: 4rem,
+		card-heading: 2rem,
+		sign-up-heading: 3.2rem,
+		productive-heading: 4rem,
+	),
+);
 
-$border-radius: ();
+$font-weights: (
+	400: 400,
+	700: 700,
+);
+
+$border-radius: (
+	100: 0.4rem,
+	200: 0.9rem,
+	900: 100vmax,
+);
 
 $spacings: (
 	em: (),

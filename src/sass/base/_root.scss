@@ -10,6 +10,8 @@
 	}
 
 	// font families
+	--ff-primary: 'Open Sans', sans-serif;
+	--ff-secondary: 'Raleway', sans-serif;
 
 	// font wieghts
 	@each $font-weight, $value in variables.$font-weights {
