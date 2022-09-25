@@ -1,13 +1,16 @@
 @use '../abstracts/mixins' as mxn;
 
 .early-access {
+	position: relative;
 	display: grid;
 	gap: 3.2rem;
 	padding-block: 4rem;
 	padding-inline: clamp(2.8rem, -2rem + 7.5vw, 7.7rem);
-	background-color: var(--clr-neutral-500);
+	margin-bottom: calc(-1 * var(--cta-margin-bottom));
+	background-color: var(--clr-primary-500);
 	border-radius: var(--borr-200);
 	box-shadow: 0.5rem 0.5rem 0.8rem hsl(0 0% 0% /0.25);
+	z-index: 10;
 
 	& header {
 		@include mxn.mq(medium) {

@@ -1,0 +1,17 @@
+@use '../abstracts/mixins' as mxn;
+
+.address {
+	&__info {
+		display: flex;
+		align-items: flex-start;
+		font-style: normal;
+	}
+
+	&__icon {
+		--size: 2.4rem;
+		display: inline-block;
+		margin-right: 1.6rem;
+		min-width: var(--size);
+		object-fit: scale-down;
+	}
+}

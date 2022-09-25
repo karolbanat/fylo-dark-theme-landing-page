@@ -189,16 +189,21 @@
 
   <footer class="primary-footer | fz-450">
     <div class="container container--large">
-      <a aria-label="Home page" href="#"><img src="./dist/images/logo.svg" alt="Fylo logo" class="logo logo--small"></a>
+      <a aria-label="Home page" href="#"><img src="./dist/images/logo.svg" alt="Fylo logo"
+             class="logo logo--small primary-footer__logo"></a>
       <div class="footer-grid">
-        <address class="address">
-          <p class="address__info"><img src="./dist/images/icons/icon-location.svg" alt="" class="address__icon"> Lorem
+        <address class="address | address-grid">
+          <p class="address__info address-grid__location"><img src="./dist/images/icons/icon-location.svg" alt=""
+                 class="address__icon"> Lorem
             ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua</p>
-          <a href="tel:+15431234567" class="link address__info"><img src="./dist/images/icons/icon-phone.svg" alt=""
-                 class="address__icon"> +1-543-123-4567</a>
-          <a href="mailto:example@fylo.com" class="link address__info"><img
-                 src="./dist/images/icons/icon-email.svg" alt="" class="address__icon"> example@fylo.com</a>
+          <div class="address-grid__inner">
+            <a href="tel:+15431234567" class="link link--bold-hover address__info address-grid__phone"><img
+                   src="./dist/images/icons/icon-phone.svg" alt=""
+                   class="address__icon"> +1-543-123-4567</a>
+            <a href="mailto:example@fylo.com" class="link link--bold-hover address__info address-grid__email"><img
+                   src="./dist/images/icons/icon-email.svg" alt="" class="address__icon"> example@fylo.com</a>
+          </div>
         </address>
         <nav aria-label="footer" class="primary-footer__nav">
           <ul class="primary-footer__nav-list">
@@ -213,7 +218,7 @@
             <li><a href="#" class="link link--bold-hover">Privacy</a></li>
           </ul>
         </nav>
-        <ul class="flex flex-center">
+        <ul class="flex-center mx-auto">
           <li>
             <a aria-label="Facebook" href="#" class="link link--social"><i class="ti ti-brand-facebook"></i></a>
           </li>

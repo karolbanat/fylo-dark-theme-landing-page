@@ -37,4 +37,7 @@
 	@each $radius, $value in variables.$border-radius {
 		--borr-#{$radius}: #{$value};
 	}
+
+	// other
+	--cta-margin-bottom: clamp(11.6rem, 22.5rem - 10vw, 17.6rem);
 }

@@ -1,0 +1,35 @@
+@use '../abstracts/mixins' as mxn;
+
+.primary-footer {
+	--padding-top: 8.4rem;
+	--padding-bottom: 5.4rem;
+	padding-top: calc(var(--cta-margin-bottom) + var(--padding-top));
+	padding-bottom: var(--padding-bottom);
+	background-color: var(--clr-primary-700);
+	@include mxn.mq(medium) {
+		--padding-top: var(--padding-bottom);
+	}
+
+	&__logo {
+		margin-bottom: clamp(3.6rem, 5vw, 5.4rem);
+	}
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(4.8rem, 6vw, 8rem);
+		@include mxn.mq(small) {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+		@include mxn.mq(medium) {
+			flex-direction: row;
+			justify-content: flex-end;
+		}
+	}
+
+	&__nav-list {
+		display: grid;
+		gap: 1.6rem;
+	}
+}
