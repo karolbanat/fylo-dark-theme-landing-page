@@ -19,3 +19,12 @@
 		}
 	}
 }
+
+.testimonials-grid {
+	display: grid;
+	gap: 2.4rem;
+	@include mxn.mq(medium) {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 4rem;
+	}
+}

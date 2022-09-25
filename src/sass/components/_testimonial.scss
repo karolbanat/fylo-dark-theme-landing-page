@@ -1,0 +1,58 @@
+@use '../abstracts/mixins' as mxn;
+
+.testimonial {
+	--padding: 2rem;
+	--padding-top: 2.4rem;
+	background-color: var(--clr-primary-400);
+	border-radius: var(--borr-100);
+	padding: var(--padding);
+	padding-top: var(--padding-top);
+	max-width: 40rem;
+	margin-inline: auto;
+	@include mxn.mq(medium) {
+		--padding: 2.6rem;
+		--padding-top: 4rem;
+	}
+
+	&__quote {
+		font-size: var(--fz-250);
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+		margin-top: 1.6rem;
+		@include mxn.mq(medium) {
+			margin-top: 2.4rem;
+		}
+	}
+
+	&__avatar {
+		--size: 2.4rem;
+		width: 2.4rem;
+		aspect-ratio: 1;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	&__author {
+		font-size: var(--fz-200);
+		font-weight: var(--fw-700);
+	}
+
+	&__position {
+		font-size: var(--fz-100);
+	}
+
+	&--quotes {
+		position: relative;
+		&::before {
+			content: url('../../../dist/images/backgrounds/bg-quotes.png');
+			position: absolute;
+			top: -3rem;
+			left: -1rem;
+			z-index: -10;
+		}
+	}
+}

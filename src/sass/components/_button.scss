@@ -1,6 +1,7 @@
 .button {
 	display: inline-block;
 	padding: var(--button-padding-block, 1.225em) var(--button-padding-inline, 6em);
+	font-family: var(--ff-secondary);
 	font-size: var(--fz-450);
 	font-weight: var(--fw-700);
 	text-decoration: none;
